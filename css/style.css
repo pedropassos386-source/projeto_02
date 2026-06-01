@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+/*Divs Gerais*/
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/***********************/
+
+/*Topo do site*/
+
+header{
+    background-color: rgb(179, 87, 202);
+    padding: 10px 2%;
+    
+}
+
+.logo-1 img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: cover;  
+}
+.logo-2 img{
+    float: right;
+    width: 150px;
+    height: 120px;
+    background-size: cover;  
+}
+
+@media screen and (max-width: 510px) {
+    header{
+        text-align: center;
+    }
+    .logo-1 img{
+        display: none;
+    }
+    .logo-2 img{
+        float: none;
+        justify-content: center;
+    }
+}
+/***********************************************/

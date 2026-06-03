@@ -62,8 +62,7 @@ header{
 /***********************************************/
 /*Plano de Fundo*/
 section.cover-form{
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .bg{
@@ -130,9 +129,7 @@ section.cover-form{
 /***********************************************/
 section.chamada{
     width: 100%;
-    padding: 30px 0;
-    text-align: center;
-    background-color:#6b5b70;
+    text-align: center;  
 }
 
 section.chamada h2{
@@ -153,6 +150,68 @@ section.chamada p{
     font-weight: normal;
     margin-top: 10px;
 }
+
+section.chamada div.container{
+    padding:40px 0 30px 0;
+    background-color:#6b5b70;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-5-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+.item-1-mosaico{
+    /* background-position: center; */
+    background-size: cover;
+    width: 60%;
+}
+.item-3-mosaico{
+    background-position: bottom;
+    background-size: cover;
+    width: 60%;
+}
+.item-4-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+.item-2-mosaico{
+    width: 40%;
+    padding:60px 40px;
+    background-color: rgb(226, 218, 218);
+}
+footer img{
+    width: 120px;
+}
+footer{
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+@media screen and (max-width:768px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item-2-mosaico{
+        width: 100%;
+        text-align: justify;
+    }
+    .item-1-mosaico,.item-3-mosaico,.item-4-mosaico,.item-5-mosaico{
+        width: 100%;
+        padding-top: 100%;
+    }
+}
+
 
 @media screen and (max-width:960px){
     .bg{

@@ -212,6 +212,12 @@ footer p{
     }
 }
 
+img{
+    transition: 0.5s;
+}
+img:hover{
+    transform: rotate(360deg);
+}
 
 @media screen and (max-width:960px){
     .bg{
